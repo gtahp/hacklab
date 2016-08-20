@@ -1,0 +1,32 @@
+<ion-view title="Login" hide-back-button="true" id="loginpage">
+<ion-content padding="true" class="has-header">
+<div>
+	<img src="img/iVAN4pyhSOCFKd3gOAAT_generic_logo.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+</div>
+
+<form name="signinForm" novalidate="" ng-submit="signIn(signinForm)">
+	<script id="templates/form-errors.html" type="text/ng-template">
+		<div class="form-error" ng-message="required">This field is required.</div>
+		<div class="form-error" ng-message="minlength">This field is must be at least 5 characters.</div>
+		<div class="form-error" ng-message="maxlength">This field is must be less than 50 characters</div>
+	</script>
+
+	<label class="item item-input " id="signup-input16">
+		<span class="input-label">Email</span>
+		<input type="text" placeholder="" ng-model='user.email' >
+	</label>
+	<label class="item item-input " id="signup-input18">
+		<span class="input-label">Password</span>
+		<input type="password" placeholder="" ng-model='user.pass'>
+	</label>
+	<div class="spacer" style="width: 300px; height: 26px;"></div>
+	<button style="font-weight:600;font-size:19px;" class=" button button-positive  button-block">
+		Login
+	</button>
+	<a ui-sref="signup" id="login-button10" style="font-weight:600;font-size:19px;" class=" button button-royal  button-block ">
+		Sign up
+	</a>
+
+</form>
+</ion-content>
+</ion-view>
